@@ -1,6 +1,6 @@
 import { useState, useCallback } from "react";
 import { WelcomeScreen } from "./modules/welcome-screen";
-// import { WelcomeScreen } from '@/modules/welcome-screen';
+
 import { MainScreen } from "@/modules/main-screen";
 import { Vignette } from "./components";
 import AudioPlayer from "./components/audio/AudioPlayer";
@@ -20,7 +20,7 @@ export const App = () => {
           {/* <WeddingInvitation /> */}
 
           <AudioPlayer isInvitationOpen={isInvitationOpen} />
-          {isLoadEnd && <MainScreen isInvitationOpen={isInvitationOpen} />}
+          {isLoadEnd && <MainScreen />}
         </div>
       ) : (
         <>

@@ -1,7 +1,4 @@
 import * as React from "react";
-import cn from "classnames";
-import { createBlock } from "@/utils";
-// import { Timing } from "@/modules/timing";
 import { Intro } from "@/components";
 import styles from "./main.module.css";
 
@@ -13,7 +10,7 @@ import locationfor from "@/assets/icons/locationfor.svg";
 import location from "@/assets/icons/location.svg";
 import Programmer from "@/components/programmer/Programmer";
 
-const MainScreen = ({ isInvitationOpen }: { isInvitationOpen: boolean }) => (
+const MainScreen = () => (
   <div
     style={{ width: "100%" }}
     // className={cn(block.block(), block.modifyBlock({ open: isInvitationOpen }))}

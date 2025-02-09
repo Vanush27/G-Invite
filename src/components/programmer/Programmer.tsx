@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Timeline from "@/ui-kit/Timeline/Timeline";
 import time from "@/assets/icons/timeforyou.svg";
 import RSVPFormt from "../RSVP/RSVPform";

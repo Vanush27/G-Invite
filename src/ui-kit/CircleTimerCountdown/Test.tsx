@@ -1,4 +1,3 @@
-import React from "react";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
 
 const getTimeDays = (time: number) => {
