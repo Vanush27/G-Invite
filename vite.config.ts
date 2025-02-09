@@ -14,4 +14,7 @@ export default defineConfig({
       "@": pathSrc,
     },
   },
+  build: {
+    outDir: "dist", // Make sure this is set correctly
+  },
 });
