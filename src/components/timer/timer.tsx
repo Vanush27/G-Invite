@@ -29,11 +29,27 @@ const Timer = () => {
   ];
 
   return (
-    <div className={block.block()}>
+    <div
+    //  className={block.block()}
+    >
       {data.map(({ value, suffix }) => (
-        <div key={suffix} className={block.element("time-block")}>
-          <span className={block.element("value")}>{value}</span>
-          <span className={block.element("suffix")}>{suffix}</span>
+        <div
+          key={suffix}
+
+          //  className={block.element("time-block")}
+        >
+          <span
+            style={{ fontSize: "40px" }}
+            // className={block.element("value")}
+          >
+            {value}
+          </span>
+          <span
+            style={{ fontSize: "40px" }}
+            // className={block.element("suffix")}
+          >
+            {suffix}
+          </span>
         </div>
       ))}
     </div>

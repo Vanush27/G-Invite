@@ -10,8 +10,8 @@
   border: none;
   cursor: pointer;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,14 +19,13 @@
 
   z-index: 1000;
   position: fixed;
-  top: 10px;
-  right: 50px;
+  top: 7%;
+  right: 5%;
   /* padding: 15px; */
   /* color: #055491; */
 
   /* border-radius: 10px; */
   /* background-color: transparent; */
-
 }
 
 .icon {

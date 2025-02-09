@@ -9,3 +9,8 @@
 .images {
   width: 60%;
 }
+
+.text {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+}

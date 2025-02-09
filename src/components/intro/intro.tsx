@@ -1,44 +1,34 @@
 import * as React from "react";
-import cn from "classnames";
-import { createBlock } from "@/utils";
-import { Timer } from "@/components";
-import "./intro.scss";
+
+import foregraound_image from "@/assets/images/foreground.jpg";
 import CircleTimerCountdown from "@/ui-kit/CircleTimerCountdown/CountdownCircleTimer";
 
-const block = createBlock("intro");
+import styles from "./intro.module.css";
 
-const Intro = () => (
-  <div className={block.block()}>
-    <div className={block.element("content")}>
-      <div
-      // className={block.element("names")}
-      >
-        {/* <span className={block.element("name")}>G</span> */}
-        <span>G</span>
-        <span
-        // className={cn(
-        //   block.element("name"),
-        //   block.modifyElement("name", "and")
-        // )}
-        >
-          &
-        </span>
-        <span>M</span>
+const Intro = () => {
+  return (
+    <div className={styles.container}>
+      <div>
+        <img
+          src={foregraound_image}
+          alt="My SVG"
+          width={"100%"}
+          height={"100%"}
+        />
+        <CircleTimerCountdown />
       </div>
-      <div className={block.element("invitation")}>
-        <p>{"Մենք հրավիրում ենք ձեզ մեր հարսանիքին"}</p>
-        {/* Приглашаем вас\nна нашу свадьбу' */}
-        <p>
-          <span className="number">{"25 օգոստոս\n 2025"}</span>
-        </p>
-      </div>
+
+      {/* <Timer /> */}
     </div>
-    <div className={block.element("timer-wrapper")}>
-      <div>Մինչ հարսանիքը մնացել է:</div>
-      <Timer />
-      <CircleTimerCountdown />
-    </div>
-  </div>
-);
+  );
+};
 
 export const MemoizedIntro = React.memo(Intro);
+
+{
+  /* <p>
+  {"Մենք հրավիրում ենք ձեզ մեր հարսանիքին"}</p>
+        <p>
+          <span className="number">{"25 օգոստոս\n 2025"}</span>
+        </p> */
+}
